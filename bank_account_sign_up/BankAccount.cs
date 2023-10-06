@@ -19,9 +19,9 @@ namespace bank_account_sign_up
             Owner = owner;
         }
 
-        public BankAccount(int number, string owner, double balance) : this(number, owner)
+        public BankAccount(int number, string owner, double initialAmmount) : this(number, owner)
         {
-            Balance = balance;
+            Deposit(initialAmmount);
         }
 
         public void Deposit(double ammount)
